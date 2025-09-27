@@ -93,7 +93,7 @@ WHERE symptom_severity = 'severe'
 GROUP BY age_group, symptom_severity
 ORDER BY total_cases DESC;
 ```
-![Aggregated Query 1](screenshots/aggregated-query.png)  
+![Aggregated Query 1](screenshots/aggregated-query-2.png)  
 
 #### Hospitalization rate by age group:
 ```sql
@@ -105,7 +105,7 @@ FROM flu_outbreak_stream
 GROUP BY age_group
 ORDER BY hospitalization_rate DESC;
 ```
-![Aggregated Query 2](screenshots/aggregated-query-2.png)  
+![Aggregated Query 2](screenshots/aggregated-query-3.png)  
 
 #### Top hospitals by total cases:
 ```sql
@@ -117,7 +117,7 @@ GROUP BY hf.name_of_facility, hf.location_id, hf.zipcode, hf.latitude, hf.longit
 ORDER BY total_cases DESC
 LIMIT 10;
 ```
-![Aggregated Query 3](screenshots/aggregated-query-3.png)  
+![Aggregated Query 3](screenshots/aggregated-query.png)  
 
 ---
 
